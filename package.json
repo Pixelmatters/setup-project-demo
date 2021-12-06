@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "lint:scripts": "eslint --ext .ts,.tsx .",
     "lint:styles": "stylelint \"src/**/*.css\"",
