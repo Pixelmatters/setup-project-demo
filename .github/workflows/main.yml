@@ -1,7 +1,7 @@
+name: "Main"
 on: pull_request
 jobs:
-  lintAndTest:
-    name: Run linters and then tests
+  lint-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
