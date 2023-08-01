@@ -14,7 +14,7 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "npm"
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Release a new version
         run: npx semantic-release
         env:
