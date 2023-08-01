@@ -4,9 +4,9 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version-file: ".nvmrc"
           cache: "npm"
@@ -21,10 +21,9 @@ jobs:
         env:
           CI: true
       - name: Run Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v5
         with:
           build: npm run build
-          start: npm run serve -- --port=3000
-          wait-on: http://localhost:3000
+          start: npm run serve -- --port=5173
+          wait-on: 'http://localhost:5173'
           browser: chrome
-          headless: true
