@@ -24,6 +24,6 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           build: npm run build
-          start: npm run serve -- --port=5173
-          wait-on: 'http://localhost:5173'
+          start: npm run serve -- --port=5173 --host
+          wait-on: 'http://0.0.0.0:5173'
           browser: chrome
