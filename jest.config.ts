@@ -7,7 +7,6 @@ const jestConfig: JestConfigWithTsJest = {
       'ts-jest',
       {
         isolatedModules: true,
-        diagnostics: false,
       },
     ],
   },

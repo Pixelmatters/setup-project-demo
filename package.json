@@ -6,9 +6,9 @@
     "npm": ">=9.0.0"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --host",
     "lint:scripts": "eslint --ext .ts,.tsx .",
     "lint:styles": "stylelint \"src/**/*.css\"",
     "storybook": "storybook dev -p 6006",
