@@ -11,7 +11,7 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "npm"
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Run ESLint
         run: npm run lint:scripts
       - name: Run Stylelint
